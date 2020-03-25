@@ -1,6 +1,5 @@
 package practicum5;
 
-import practicum4B.Klant;
 
 import java.util.ArrayList;
 

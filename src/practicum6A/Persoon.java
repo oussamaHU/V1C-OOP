@@ -50,6 +50,15 @@ public class Persoon {
 
     }
 
+    public ArrayList<Game>bepaalGamesNietInBezit(ArrayList<Game> games){
+        for(Game game : games){
+            for(Game mijnGame : mijnGames){
+                if(game.equals(mijnGame)) games.remove(game);
+            }
+        }
+        return games;
+    }
+
 
     public String toString() {
            String s  = naam + " heeft een budget van " + String.format("%.2f", budget) + " en bezit nu de volgende games: \n";
