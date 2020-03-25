@@ -39,6 +39,16 @@ public class Persoon {
         return false;
 
     }
+    public Game zoekGameOpNaam(String gameNaam){
+        for(Game game: mijnGames ){
+            if (game.getNaam().equals(gameNaam)) {
+                return game;
+            }
+        }
+        return null;
+
+
+    }
 
 
     public String toString() {
