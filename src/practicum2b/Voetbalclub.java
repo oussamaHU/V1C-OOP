@@ -18,6 +18,9 @@ public class Voetbalclub {
             aantalVerloren = aantalVerloren + 1;
     }
     public Voetbalclub(String naam){
+        if (naam == null || naam == ""){
+            this.naam = "FC";
+        }else
         this.naam = naam;
     }
 
